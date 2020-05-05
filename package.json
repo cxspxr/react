@@ -47,7 +47,21 @@
   "devDependencies": {
     "electron": "^8.2.5",
     "electron-builder": "^22.6.0",
-    "foreman": "^3.0.1"
+    "foreman": "^3.0.1",
+    "eslint-config-airbnb-typescript-prettier": "^2.1.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
   },
   "build": {
     "appId": "com.electron.typescript-electron",
