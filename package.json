@@ -21,13 +21,14 @@
     "start": "nf start -p 3000",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
     "electron": "electron .",
     "electron-start": "node electron/start-react",
     "react-start": "react-scripts start",
     "pack": "electron-builder --dir",
     "dist": "yarn build && electron-builder",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,6 +49,11 @@
     "electron": "^8.2.5",
     "electron-builder": "^22.6.0",
     "foreman": "^3.0.1",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/preset-create-react-app": "^2.1.1",
+    "@storybook/react": "^5.3.18",
     "eslint-config-airbnb-typescript-prettier": "^2.1.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
