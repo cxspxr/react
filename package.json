@@ -47,7 +47,7 @@
     "@storybook/react": "5.3.19",
     "eslint-config-airbnb-typescript-prettier": "3.1.0",
     "husky": "4.2.5",
-    "lint-staged": "10.2.11",
+    "lint-staged": "10.5.4",
     "prettier": "2.0.5"
   },
   "husky": {
